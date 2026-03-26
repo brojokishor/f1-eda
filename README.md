@@ -38,6 +38,22 @@ These observations highlight the importance of validating data assumptions and u
 
 ---
 
+## Visualizations
+
+### Race Position Changes
+![Position Changes](outputs/figures/position_changes.png)
+
+### Tyre Compund vs Lap Time
+![Compound Lap Times](outputs/figures/compound_laptimes.png)
+
+### Lap Time Evolution
+![Lap Time Evolution](outputs/figures/laptime_evolution.png)
+
+### Team Consistency
+![Team Consistency](outputs/figures/team_consistency.png)
+
+---
+
 ## Tools used 
 - Python 3.12
 - FastF1 — pulls official F1 timing data directly
