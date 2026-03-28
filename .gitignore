@@ -1,0 +1,5 @@
+data/raw/2023/
+data/raw/*.sqlite
+data/raw/*.ff1pkl
+*.ff1pkl
+*.sqlite
