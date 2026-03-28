@@ -3,3 +3,12 @@ data/raw/*.sqlite
 data/raw/*.ff1pkl
 *.ff1pkl
 *.sqlite
+
+# Data files
+data/
+*.sqlite
+*.pkl
+*.ff1pkl
+
+# Cache
+__pycache__/
