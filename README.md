@@ -43,7 +43,7 @@ These observations highlight the importance of validating data assumptions and u
 
 ---
 
-## Visualizations
+## Visualizations - Monza
 
 ### Race Position Changes
 ![Position Changes](outputs/figures/position_changes.png)
