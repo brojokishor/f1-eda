@@ -71,9 +71,9 @@ After finishing Monza I wanted to see if the findings were specific to Monza or 
 
 - **Verstappen was fastest everywhere — but Singapore was where he struggled most**. His pace advantage over the field median was +1.29s at Monaco and only +0.13s at Singapore. 
 
-- **The Monaco paradox**. Verstappen had his biggest pace advantage at Monaco but didn't win. At Monaco, qualifying position is race position — there's no overtaking. The data shows his pace, the result doesn't reflect it. Circuit characteristics don't just affect lap times, they affect whether being the fastest car even matters.
+- **The Monaco paradox**. Verstappen had his biggest pace advantage at Monaco but didn't win. At Monaco, qualifying position is race position — there's no overtaking. The data shows his pace, the result doesn'ti reflect it. Circuit characteristics don't just affect lap times, they affect whether being the fastest car even matters.
 
----
+--- 
 
 ## Multi-race visualizations
 
@@ -92,6 +92,47 @@ After finishing Monza I wanted to see if the findings were specific to Monza or 
 ### Verstappen's Pace Advantage by Circuit
 ![Verstappen's Pace Advantage](outputs/figures/ver_dominance.png)
 
+---
+
+# Part 3 — Qualifying vs. Race Performance
+After looking at the race pace and consistency, the next question was:
+**How much does qualifying actually matter?**
+
+Being fastest over one lap doesn't always translate into race results — strategy, tyre management, and race conditions all come into play.
+
+--- 
+
+## What I wanted to find out
+- **Pole position** → **race win conversion**: How often does the leader actually stay in front?
+- **Driver position changes**: Comparing qualifying spots to final race finish.
+- **Team-level performance**: Which teams consistently gain or lose ground over a race?
+- **Circuit-wise correlation**: How much does the specific track influence the importance of qualifying?
+
+--- 
+
+## Key Findings
+- **Pole position is strong, but not absolute**. Out of six races, 5 pole sitters converted to wins. Monza (Sainz P3) was the only exception in this dataset.
+- **Qualifying is largely preserved**. The correlation between qualifying and race position remained high(~0.85-0.90), though it still is allowed for meaningful reshuffling.
+- **Race pace and strategy are key**. Some drivers consistently gain positions during races, suggesting that execution on Sunday can matter more than starting position alone.
+- **Teamoptimization differs**. The data shows some teams focus on one-lap pace, while others are clearly optimized for long-run consistency.
+- **Circuit characteristics dictate the rules**. Monaco-like circuits heavily favour track position, while other tracks allow for more movement through strategy and overtaking.  
+
+--- 
+
+## Visualizations — Qualifying vs. Race
+
+### Pole position vs Race Finish
+![Pole Position to Race Win Conversion](outputs/figures/pole_to_win.png)
+
+### Driver Position Delta
+![Driver Position Delta](outputs/figures/driver_position_delta.png)
+
+### Team Qualifying vs Race Performance
+![Team Qualifying vs Race Performance
+](outputs/figures/team_position_delta.png)
+
+### Circuit-level Correlation
+![Circuit-level correlation](outputs/figures/quali_race_correlation.png)
 
 ---
 
@@ -131,6 +172,7 @@ f1-eda/
 │   ├── 02_data_cleaning.ipynb
 │   └── 03_analysis_and_viz.ipynb
 |   └── 04_multi_race_analysis.ipynb
+|   └── 05_quali_vs_race.ipynb
 ├── outputs/
 │   └── figures/           # saved plots
 ├── src/
@@ -142,7 +184,6 @@ f1-eda/
 ---
 
 ## Next steps
-- Compare qualifying vs race performance — does pole position actually predict race wins? 
 - Go deeper into sector times instead of just full lap timmes
 - Add a simple ML model to predict podium finishers
 
