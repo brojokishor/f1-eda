@@ -192,6 +192,8 @@ f1-eda/
 ---
 
 ## What's next
-The EDA phase is complete. The project is moving toward predictive modeling for the 2026 season — circuit characteristics, driver consistency, and qualifying patterns will form the foundation of that work.  
+- Sector time analysis as a finer-grained signal
+- Expand to more circuits and seasons
+- Explore ML as a natural next step from this analysis 
 
 Still learning!
