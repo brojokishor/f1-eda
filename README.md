@@ -1,4 +1,4 @@
-# F1 Data Analysis — Starting with Monza, Then Going Wider
+# F1 Data Analysis — starting with Monza, then going wider
 I've had an interest in Formula 1 for a long time, but only recently started following the sport closely.
 What stood out to me wasn't just the racing, but how much of it comes down to data - lap times, tyre strategy, pit stops, and consistency.
 
@@ -157,7 +157,14 @@ pip install -r requirements.txt
 jupyter lab 
 </pre>
 
-Run the notebooks in order — 01 first, then 02, then 03.
+Run the notebooks in order:
+- `01_data_collection.ipynb` — loads and caches race data via FastF1
+- `02_data_cleaning.ipynb` — filters inaccurate laps, converts timedeltas, saves processed CSV
+- `03_analysis_and_viz.ipynb` — Monza race analysis and visualizations
+- `04_multi_race_analysis.ipynb` — extends analysis across 6 circuits
+- `05_quali_vs_race.ipynb` — qualifying vs race performance comparison
+
+> Note: FastF1 downloads telemetry data on first run and caches it locally. The first run will be slow — subsequent runs are fast.
 
 ---
 
@@ -178,13 +185,13 @@ f1-eda/
 ├── src/
 │   └── helpers.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── CHANGELOG.md
 ```
 
 ---
 
-## Next steps
-- Go deeper into sector times instead of just full lap timmes
-- Add a simple ML model to predict podium finishers
+## What's next
+The EDA phase is complete. The project is moving toward predictive modeling for the 2026 season — circuit characteristics, driver consistency, and qualifying patterns will form the foundation of that work.  
 
 Still learning!

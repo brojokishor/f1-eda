@@ -3,6 +3,7 @@ data/raw/*.sqlite
 data/raw/*.ff1pkl
 *.ff1pkl
 *.sqlite
+venv/
 
 # Data files
 data/
